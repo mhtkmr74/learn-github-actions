@@ -1,0 +1,41 @@
+
+[
+  {
+    "collection_predicate": "All",
+    "conditions": [
+      {
+        "field": "sender",
+        "predicate": "contains",
+        "value": "bettiah.com"
+      },
+      {
+        "field": "subject",
+        "predicate": "contains",
+        "value": "testemail"
+      }
+    ],
+    "actions": {
+      "mark_as_read": true,
+      "move_to_folder": "CATEGORY_PROMOTIONS"
+    }
+  },
+  {
+    "collection_predicate": "Any",
+    "conditions": [
+      {
+        "field": "subject",
+        "predicate": "contains",
+        "value": "facebook"
+      },
+      {
+        "field": "subject",
+        "predicate": "contains",
+        "value": "social"
+      }
+    ],
+    "actions": {
+      "mark_as_read": true,
+      "move_to_folder": "CATEGORY_SOCIAL"
+    }
+  }
+]
